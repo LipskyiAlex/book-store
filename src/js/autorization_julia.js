@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
       userEmail: userEmail,
       userPassword: userPassword,
     };
-    async function addUserToFirebase(userData) {
+    async function addUserToFirebase(userData,analytics) {
       const usersCol = collection(db, 'user_data');
 
       try {
